@@ -1,4 +1,4 @@
-% Run the function to generating dataset for training
+% Run the function to generate dataset for training
 
 for SNR=-20:1:5
     for i=1:1:100
