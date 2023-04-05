@@ -1,3 +1,5 @@
+% Run the function to generating dataset for training
+
 for SNR=-20:1:5
     for i=1:1:100
         [t,signal] = QPSK(400);
