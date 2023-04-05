@@ -1,9 +1,5 @@
 function [feature_1,feature_0] = cs_feature(signal,SNR)
-% figure(1)
-% [t,signal] = QPSK_3(400);
-% plot(t, signal);grid on;axis([0 10 -4 4]);title('QPSK');
-
-% SNR = -5;
+% Function for generating cyclestationary feature of received signal.
 
 l = length(signal);
 signal_sample = [];
@@ -15,8 +11,6 @@ Signal = signal_sample';
 l = length(Signal);
 y_1 = awgn(Signal,SNR);
 y_0 = y_1 - Signal;
-
-
 
 y_1 = normalize(y_1);
 y_0 = normalize(y_0);
