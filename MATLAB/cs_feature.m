@@ -43,8 +43,3 @@ feature_0 = [cs_feature_0_alpha;cs_feature_0_f]';
 feature = feature_1;
 
 end
-
-% filename = strcat('Signal_1_',num2str(j),'.mat');
-% save(filename, 'feature');
-
-%end
