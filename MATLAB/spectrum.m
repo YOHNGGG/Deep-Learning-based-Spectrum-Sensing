@@ -1,7 +1,6 @@
 function [S_1, S_0] = spectrum(signal,SNR)
-% [t,signal] = QPSK_3(400);
-% plot(t, signal);grid on;axis([0 10 -4 4]);title('QPSK');
-% SNR = 10;
+% Function for generating power feature of received signal;
+
 l = length(signal);
 signal_sample = [];
 for i =1:1:1280
@@ -24,8 +23,3 @@ S_1 = S_1 * 100;
 S_0 = S_0 * 100;
 
 end
-
-% figure(1)
-% pwelch(y_1);
-% figure(2)
-% pwelch(y_0);
