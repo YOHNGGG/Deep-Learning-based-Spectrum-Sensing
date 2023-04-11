@@ -1,4 +1,4 @@
-function [ tt, Signal ] = eightPSK( N ) %N为码元数
+function [ tt, Signal ] = eightPSK( N )
 % Generate received 8PSK modulated analog signal
 
 Ts=1;          
@@ -104,5 +104,3 @@ chan = rayleighchan(Ts, Fd, tau, pdb);
 y = filter(chan,signal_complex);
 
 Signal = real(y);
-
-% plot(tt, Signal);grid on;axis([0 10 -2 2]);title('QPSK');
